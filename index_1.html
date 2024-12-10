@@ -1,0 +1,542 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Thyrll</title>
+    <style>
+        @font-face {
+            font-family: 'BukhariScript';
+            src: url('./assets/BukhariScript.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'TelegrafRegular';
+            src: url('./assets/TelegrafRegular.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #001F3F, #007BFF);
+            overflow: hidden;
+            color: white;
+            position: relative;
+        }
+
+        /* Background container for circles */
+        .background-circles {
+            position: absolute;
+            top: 0;
+            left: 30%; /* Start right after the text-content area */
+            width: 70%; /* Restrict to 70% of the screen */
+            height: 100%;
+            z-index: 0;
+            pointer-events: none; /* Ensure circles don't interfere with interactions */
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, -30px);
+            }
+            50% {
+                transform: translate(-50px, 50px);
+            }
+            75% {
+                transform: translate(-30px, -50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .circle:nth-child(1) {
+            width: 160px;
+            height: 160px;
+            top: 10%;
+            left: 15%;
+            background-image: url('https://via.placeholder.com/160');
+            animation-duration: 18s;
+        }
+
+        .circle:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 30%;
+            right: 10%;
+            background-image: url('https://via.placeholder.com/200');
+            animation-duration: 22s;
+        }
+
+        .circle:nth-child(3) {
+            width: 130px;
+            height: 130px;
+            top: 60%;
+            left: 25%;
+            background-image: url('https://via.placeholder.com/130');
+            animation-duration: 16s;
+        }
+
+        .circle:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            bottom: 20%;
+            right: 20%;
+            background-image: url('https://via.placeholder.com/100');
+            animation-duration: 24s;
+        }
+
+        .circle:nth-child(5) {
+            width: 150px;
+            height: 150px;
+            top: 40%;
+            left: 50%;
+            background-image: url('https://via.placeholder.com/150');
+            animation-duration: 20s;
+        }
+
+        .circle:nth-child(6) {
+            width: 120px;
+            height: 120px;
+            bottom: 5%;
+            right: 15%;
+            background-image: url('https://via.placeholder.com/120');
+            animation-duration: 26s;
+        }
+
+        .circle:nth-child(7) {
+            width: 140px;
+            height: 140px;
+            bottom: 25%;
+            left: 10%;
+            background-image: url('https://via.placeholder.com/140');
+            animation-duration: 28s;
+        }
+
+        /* Main content */
+        .container {
+            position: relative;
+            z-index: 1; /* Ensures text content is above the circles */
+            display: flex;
+            align-items: center;
+            max-width: 1500px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-content {
+            flex: 1;
+            max-width: 30%;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 70vh;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'TelegrafRegular';
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            font-family: 'TelegrafRegular';
+            margin: 0px;
+        }
+
+        .app-name {
+            font-size: 6rem;
+            margin: 0px;
+            color: #00FFCC;
+            text-shadow: 0 0 10px #00FFCC;
+            font-family: 'BukhariScript';
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="background-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    
+    <div class="container">
+        <div class="text-content">
+            <div>
+                <div class="tagline">Spark the unexpected.</div>
+            </div>
+            <div>
+                <h1 class="headline">Find your</h1>
+                <p class="app-name">Thyrll</p>
+            </div>
+            <div>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Thyrll</title>
+    <style>
+        @font-face {
+            font-family: 'BukhariScript';
+            src: url('./assets/BukhariScript.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'TelegrafRegular';
+            src: url('./assets/TelegrafRegular.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #001F3F, #007BFF);
+            overflow: hidden;
+            color: white;
+            position: relative;
+        }
+
+        /* Background container for circles */
+        .background-circles {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            /* Start after text content */
+            width: 70%;
+            /* Restrict to 70% of the screen */
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+        }
+
+        .circle:nth-child(1) {
+            width: 350px;
+            height: 350px;
+            background-image: url('https://via.placeholder.com/160');
+        }
+
+        .circle:nth-child(2) {
+            width: 320px;
+            height: 320px;
+            background-image: url('https://via.placeholder.com/200');
+        }
+
+        .circle:nth-child(3) {
+            width: 280px;
+            height: 280px;
+            background-image: url('https://via.placeholder.com/130');
+        }
+
+        .circle:nth-child(4) {
+            width: 260px;
+            height: 260px;
+            background-image: url('https://via.placeholder.com/100');
+        }
+
+        .circle:nth-child(5) {
+            width: 240px;
+            height: 240px;
+            background-image: url('https://via.placeholder.com/150');
+        }
+
+        .circle:nth-child(6) {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/120');
+        }
+
+        .circle:nth-child(7) {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/140');
+        }
+
+        /* Main content */
+        .container {
+            position: relative;
+            z-index: 1;
+            /* Ensures text content is above the circles */
+            display: flex;
+            align-items: center;
+            max-width: 1500px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-content {
+            flex: 1;
+            max-width: 30%;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 70vh;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'TelegrafRegular';
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            font-family: 'TelegrafRegular';
+            margin: 0px;
+        }
+
+        .app-name {
+            font-size: 6rem;
+            margin: 0px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff;
+            font-family: 'BukhariScript';
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-circles" id="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="text-content">
+            <div>
+                <div class="tagline">Spark the unexpected.</div>
+            </div>
+            <div>
+                <h1 class="headline">Find your</h1>
+                <p class="app-name">Thyrll</p>
+            </div>
+            <div>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // const circles = document.querySelectorAll('.circle');
+        // const container = document.getElementById('circle-container');
+
+        // // Get container boundaries
+        // const containerBounds = container.getBoundingClientRect();
+
+        // // Generate random movement for each circle
+        // circles.forEach(circle => {
+        //     let x = Math.random() * containerBounds.width;
+        //     let y = Math.random() * containerBounds.height;
+        //     let dx = (Math.random() - 0.5) * 2; // Speed in x direction
+        //     let dy = (Math.random() - 0.5) * 2; // Speed in y direction
+
+        //     // Set initial position
+        //     circle.style.left = `${x}px`;
+        //     circle.style.top = `${y}px`;
+
+        //     function move() {
+        //         x += dx;
+        //         y += dy;
+
+        //         // Check for collisions with container boundaries
+        //         if (x <= 0 || x + circle.offsetWidth >= containerBounds.width) dx *= -1;
+        //         if (y <= 0 || y + circle.offsetHeight >= containerBounds.height) dy *= -1;
+
+        //         // Update position
+        //         circle.style.left = `${x}px`;
+        //         circle.style.top = `${y}px`;
+
+        //         requestAnimationFrame(move);
+        //     }
+
+        //     move();
+        // });
+
+
+        const circles = document.querySelectorAll('.circle');
+        const container = document.getElementById('circle-container');
+
+        const containerWidth = container.offsetWidth;
+        const containerHeight = container.offsetHeight;
+
+        // Initialize positions and velocities
+        const circlesData = Array.from(circles).map(circle => {
+            const size = circle.offsetWidth;
+            return {
+                element: circle,
+                x: Math.random() * (containerWidth - size),
+                y: Math.random() * (containerHeight - size),
+                dx: (Math.random() - 0.5) * 2,
+                dy: (Math.random() - 0.5) * 2,
+                size,
+            };
+        });
+
+        // Check if two circles overlap
+        function isOverlapping(circle1, circle2) {
+            const dx = circle1.x + circle1.size / 2 - (circle2.x + circle2.size / 2);
+            const dy = circle1.y + circle1.size / 2 - (circle2.y + circle2.size / 2);
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            return distance < (circle1.size + circle2.size) / 2;
+        }
+
+        // Generate a random position without overlap
+        function getNonOverlappingPosition(size) {
+            let retries = 0;
+            while (retries < 100) {
+                const x = Math.random() * (containerWidth - size);
+                const y = Math.random() * (containerHeight - size);
+
+                // Check if the position overlaps with existing circles
+                const overlapping = circlesData.some(existingCircle => {
+                    const dx = x + size / 2 - (existingCircle.x + existingCircle.size / 2);
+                    const dy = y + size / 2 - (existingCircle.y + existingCircle.size / 2);
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    return distance < (size + existingCircle.size) / 2;
+                });
+
+                if (!overlapping) {
+                    return { x, y };
+                }
+
+                retries++;
+            }
+
+            // Fallback to random position after retries
+            return { x: Math.random() * (containerWidth - size), y: Math.random() * (containerHeight - size) };
+        }
+
+        // Initialize circles with non-overlapping positions
+        circles.forEach(circle => {
+            const size = circle.offsetWidth;
+            const { x, y } = getNonOverlappingPosition(size);
+
+            circlesData.push({
+                element: circle,
+                x,
+                y,
+                dx: (Math.random() - 0.5) * 2,
+                dy: (Math.random() - 0.5) * 2,
+                size,
+            });
+
+            // Set initial positions
+            circle.style.left = `${x}px`;
+            circle.style.top = `${y}px`;
+        });
+
+        // Move and bounce circles
+        function animate() {
+            circlesData.forEach(circle => {
+                circle.x += circle.dx;
+                circle.y += circle.dy;
+
+                // Check boundaries
+                if (circle.x <= 0 || circle.x + circle.size >= containerWidth) circle.dx *= -1;
+                if (circle.y <= 0 || circle.y + circle.size >= containerHeight) circle.dy *= -1;
+
+                // Check collisions
+                circlesData.forEach(otherCircle => {
+                    if (circle !== otherCircle && isOverlapping(circle, otherCircle)) {
+                        circle.dx *= -1;
+                        circle.dy *= -1;
+                    }
+                });
+
+                // Apply styles
+                circle.element.style.left = `${circle.x}px`;
+                circle.element.style.top = `${circle.y}px`;
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        // animate();
+
+    </script>
+</body>
+
+</html> -->
