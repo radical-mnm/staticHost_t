@@ -205,33 +205,116 @@
                 height: 60px;
             }
         }
+
+        /* Reset body and html */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Animated background container */
+    .animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg, 
+        #FF4E50,  /* Vivid red */
+        #FC913A,  /* Vibrant orange */
+        #F9D423,  /* Golden yellow */
+        #E81F7F,  /* Hot pink */
+        #8A2BE2,  /* Electric purple */
+        #1BE7FF   /* Fresh blue */
+      );
+      background-size: 400% 400%;
+      animation: passionWave 10s infinite;
+      z-index: -1;
+    }
+
+    /* Keyframes for animation */
+    @keyframes passionWave {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Content over the animated background */
+    .content {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .content h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .content p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Overlay for text contrast (optional) */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+    }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-content">
-            <div>
-                <!-- <div class="tagline">Spark the unexpected.</div> -->
+
+    <div class="animated-bg"></div>
+    <div class="overlay"></div>
+        <div class="container">
+            <div class="text-content">
+                <div>
+                    <!-- <div class="tagline">Spark the unexpected.</div> -->
+                </div>
+                <div>
+                    <h1 class="headline">Find your</h1>
+                    <p class="app-name">Thyrll</p>
+                </div>
+                <div>
+                    <div class="tagline">Spark the unexpected.</div>
+                </div>
             </div>
-            <div>
-                <h1 class="headline">Find your</h1>
-                <p class="app-name">Thyrll</p>
-            </div>
-            <div>
-                <div class="tagline">Spark the unexpected.</div>
+            <div class="circle-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
         </div>
-        <div class="circle-container">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </div>
+    
+
+
+    
 </body>
 
 </html>
